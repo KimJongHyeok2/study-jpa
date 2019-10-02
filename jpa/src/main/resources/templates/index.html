@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Study</title>
+</head>
+<script>
+function request(type) {
+	if(type == "list") {
+		location.href = "/user/list";
+	} else if(type == "save") {
+		location.href = "/user/save";
+	} else if(type == "delete") {
+		location.href = "/user/delete";		
+	}
+}
+</script>
+<body>
+<button onclick="request('list');">List</button>
+<button onclick="request('save');">Save</button>
+<button onclick="request('delete');">DeleteAll</button>
+</body>
+</html>
